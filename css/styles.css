@@ -1,45 +1,57 @@
 *{
 	margin:0px;
 	padding: 0px;
-	-webkit box box-sizing: border box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	
 
 }
 
 body{
-    font-family: "Open sans";
+font-family: 'Ropa Sans', sans-serif;
 	overflow-x:hidden;
+	color:#353244;
 	font-weight: bold;
 }
 
+/*section donde va el header*/
 .section_header{
+	position: relative;
+	height: 10vh;
+	width: 100vw;
+	display: grid;
 	border: 1px solid #ccc;
-	grid-template-columns: repeat(auto-fill, 300px);
+	grid-template-columns: repeat(auto-fill, 100%);
 }
 .section_header ul {
-	max-width: 100%;
 	list-style: none;
-justify-content: center;
-    display: grid;
-     
-    font-size: 30px;
-    display: flex;
+	justify-content: center;
+	display: grid;
+    height: 80vh;
+	display: flex;
 	
 }
-.section_header ul li a{
-	text-decoration: none;
-	display: block;
-	  margin:auto;
-	   	display: grid;
-	   	margin: 30px;
-	color: #000;
-	  font-family: "Open sans";
 
-
-
+.section_header a.active{
+	color: #ce198a;
 }
+.section_header a:hover{
+	color: #ce198a;
+}
+
+.section_header ul a{
+	text-decoration: none;
+	display: grid;
+	font-size: calc(1rem + 1.2vw);
+	color: #353244;
+	
+	
+}
+
+.section_header  li {
+	margin: calc(1em + 1vw) ;
+}
+
+
 #artists{
 	padding: 10px;
-	border: 1px solid #ccc;
+	
 }
