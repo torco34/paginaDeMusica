@@ -117,18 +117,29 @@ hr{
     margin-left: 80%;
 }
 
+/*.container article{
+    position: absolute;
+    display:none;
+}*/
 
 
-
-#artists {
+.top_playlists{
+    display: none;
+    /*position: absolute;*/
+    border: 1px solid red;
     padding: 10px;
 }
 
-#playlists{
+.top_artists{
+    padding: 10px;
+     border: 1px solid red;
     display: none;
 }
 
-#videos{
+.top_videos{
+     border: 1px solid red;
+     width: 100%;
+     padding: 20px;
     /*display: none;*/
 }
 
