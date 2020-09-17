@@ -133,13 +133,13 @@ hr{
 .top_artists{
     padding: 10px;
      border: 1px solid red;
-    display: none;
+    /*display: none;*/
 }
 
 .top_videos{
      border: 1px solid red;
      width: 100%;
      padding: 20px;
-    /*display: none;*/
+    display: none;
 }
 
