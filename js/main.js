@@ -1,26 +1,75 @@
-let playlists = document.getElementById('top_playlists')
-let artista = document.getElementById('top_artists')
-let videos = document.getElementById('top_videos')
+let lists = document.getElementById('lists')
+let artista = document.getElementById('artists')
+let videos = document.getElementById('videos')
 let lista = document.getElementById('lista')
 
+console.log(lists)
+
+ 
 
 
-console.log(lista)
-// console.log(playlists, artists, videos, contenedor )
 
-function  selecionar(){
-	// alert('artista favorito')
-	console.log('artista favorito')
+
+
+ function  listaReproducion(){
+	
+		document.getElementById("top_playlists").style.display = 'block'
+		document.getElementById('top_artists').style.display = 'none'
+		document.getElementById('top_videos').style.display = 'none'
+	
+	
+}  
+
+
+
+function  listaArtista(evento){
+	
+	 document.getElementById('top_artists').style.display = "block"
+	 document.getElementById("top_playlists").style.display = "none"
+	 document.getElementById("top_videos").style.display = "none"
+	 	lists.classList.remove('active')
+	 evento.preventDefault()
+
+	        
+	         	lista.classList.remove('active')
+	
+
+	
+}
+
+
+function  listaVideos(evento){
+	
+		document.getElementById('top_videos').style.display = "block"
+		document.getElementById("top_artists").style.display = "none"
+		document.getElementById("top_playlists").style.display = "none"
+        evento.preventDefault()
+		
+		
 }
 
 
 
-// listaPrincipal()
-// seleccionVideos()
-//  selecionArtistas()
-// playlists.addEventListener('click', listaPrincipal)
-// artista.addEventListener('click', selecionArtistas)
-// videos.addEventListener('click', seleccionVideos)
- for(let i = 0; i<=lista.children.length -1; i++){
- 	lista.children[i].addEventListener('click', selecionar)
- }
+
+
+     lists.addEventListener('click', listaReproducion)
+ 	artista.addEventListener('click', listaArtista)
+ 	videos.addEventListener('click', listaVideos)
+ 
+
+
+// function abrirArtista(e){
+// alert('abrir artist')
+// }
+
+
+// function abrirVideos(e){
+// 	alert('abrir video')
+
+// }
+
+
+// lists.addEventListener('click', abrirPlayLista)
+// artista.addEventListener('click', abrirArtista)
+// videos.addEventListener('click', abrirVideos)
+

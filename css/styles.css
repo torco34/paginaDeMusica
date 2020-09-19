@@ -124,7 +124,7 @@ hr{
 
 
 .top_playlists{
-    display: none;
+    /*display: none;*/
     /*position: absolute;*/
     border: 1px solid red;
     padding: 10px;
@@ -133,7 +133,7 @@ hr{
 .top_artists{
     padding: 10px;
      border: 1px solid red;
-    /*display: none;*/
+    display: none;
 }
 
 .top_videos{
