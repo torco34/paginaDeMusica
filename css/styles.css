@@ -47,12 +47,12 @@ body {
     color: #353244;
 }
 
-
-.section_header a.active {
+/*
+ ul li a.active {
     color: #ce198a;
 }
-
-.section_header a:hover {
+*/
+ul li a:hover {
     color: #ce198a;
 }
 
@@ -142,4 +142,5 @@ hr{
      padding: 20px;
     display: none;
 }
+
 
