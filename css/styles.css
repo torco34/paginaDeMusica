@@ -44,14 +44,14 @@ body {
     display: grid;
     font-size: calc(1rem + 1vw);
    justify-content: center;
-    color: #353244;
+    /*color: #353244;*/
 }
 
-/*
+
  ul li a.active {
     color: #ce198a;
 }
-*/
+
 ul li a:hover {
     color: #ce198a;
 }
