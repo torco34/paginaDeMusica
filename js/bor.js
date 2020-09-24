@@ -1,18 +1,33 @@
-const listaOrdenada = document.querySelector("ul")
-
-function cambioColor(){
-for(let j=0; j<=listaOrdenada.children.length; j++){
-	 listaOrdenada.classList.add('active')
- alert('cambiar color')
- // console.log(listaOrdenar.children[j])
-}
-listaOrdenada.classList.add("active")
-}
 
 
+ const colores = document.getElementById('combiarColores')
 
-for(let i=0; i<listaOrdenada.children.length ; i++){
-	listaOrdenada.children[i].addEventListener('click', cambioColor)
-	// classList.remove('active')
-	console.log(listaOrdenada.children[i])
-}
+	function cambioColores(){
+	if(lists){
+		topLists.style.display = 'block'
+		topArtista.style.display = "none"
+		topVideo.style.display = "none"
+
+	}if(artista){
+		topLists.style.display = 'none'
+		topArtista.style.display = "block"
+		topVideo.style.display = "none"
+	}if( videos){
+		topLists.style.display = 'none'
+		topArtista.style.display = "none"
+		topVideo.style.display = "block"
+		videos.style.color = "red"
+	}else{
+		return lists
+	}
+
+	}
+
+	  
+	
+	for(let i=0; i<colores.children.length; i++){
+		colores.children[i].addEventListener('click', cambioColores)
+	}
+	
+
+// colores.addEventListener('click', cambioColores)
